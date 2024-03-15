@@ -15,7 +15,7 @@ This template comes with the most common pre-installed data science tools:
 To install this template:
 
 ```
-npx degit https://github.com/nicolasdao/template-empty-python.git YOUR_PROJECT_NAME
+npx degit https://github.com/nicolasdao/python_data_science_template.git YOUR_PROJECT_NAME
 ```
 
 Then run, the following commands to initialize this project:
@@ -33,7 +33,7 @@ If you're using Linux or Mac, all those commands can be combined as follow:
 
 ```
 func() { \
-	npx degit https://github.com/nicolasdao/template-empty-python.git $1; \
+	npx degit https://github.com/nicolasdao/python_data_science_template.git $1; \
 	cd $1; \
 	python3 -m venv .venv; \
 	source .venv/bin/activate; \
@@ -63,7 +63,7 @@ func() { \
 
 1. Clone this project:
 ```shell
-git clone https://github.com/nicolasdao/template-empty-python.git
+git clone https://github.com/nicolasdao/python_data_science_template.git
 ```
 2. Browse to the root folder:
 ```shell
