@@ -13,24 +13,7 @@ This template comes with the most common pre-installed data science tools:
 
 To install this template:
 
-```
-npx degit https://github.com/nicolasdao/python_data_science_template.git YOUR_PROJECT_NAME
-```
-
-Then run, the following commands to initialize this project:
-
-```
-cd YOUR_PROJECT_NAME; \
-python3 -m venv .venv; \
-source .venv/bin/activate; \
-pip install --upgrade pip; \
-pip install -r requirements.txt; \
-mv ./src/empty-python ./src/YOUR_PROJECT_NAME
-```
-
-If you're using Linux or Mac, all those commands can be combined as follow:
-
-```
+```shell
 func() { \
 	npx degit https://github.com/nicolasdao/python_data_science_template.git $1; \
 	cd $1; \
@@ -40,6 +23,18 @@ func() { \
 	pip install -r requirements.txt; \
 	mv ./src/empty-python ./src/$1
 }; func YOUR_PROJECT_NAME
+```
+
+If it is already installed and you simply want to activate it:
+
+```shell
+source .venv/bin/activate
+```
+
+To start the notebook:
+
+```shell
+make n
 ```
 
 # Table of contents
@@ -80,6 +75,31 @@ source .venv/bin/activate
 To deactivate that virtual environment:
 ```shell
 deactivate
+```
+
+All those steps can be done faster this way:
+
+```shell
+cd YOUR_PROJECT_NAME; \
+python3 -m venv .venv; \
+source .venv/bin/activate; \
+pip install --upgrade pip; \
+pip install -r requirements.txt; \
+mv ./src/empty-python ./src/YOUR_PROJECT_NAME
+```
+
+If you're using Linux or Mac, all those commands can be combined as follow:
+
+```shell
+func() { \
+	npx degit https://github.com/nicolasdao/python_data_science_template.git $1; \
+	cd $1; \
+	python3 -m venv .venv; \
+	source .venv/bin/activate; \
+	pip install --upgrade pip; \
+	pip install -r requirements.txt; \
+	mv ./src/empty-python ./src/$1
+}; func YOUR_PROJECT_NAME
 ```
 
 ## CLI commands
