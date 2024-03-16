@@ -10,7 +10,6 @@ This template comes with the most common pre-installed data science tools:
 - `tensorflow`
 - `jupyterlab`
 - `requests`
-- `aiomysql`
 
 To install this template:
 
